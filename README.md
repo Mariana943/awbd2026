@@ -308,4 +308,4 @@ Modelul de date conține 8 entități interconectate. Relațiile importante sunt
 
 -IFR-Grupa2
 
--Master AWBD 2026
+-AWBD 2026
