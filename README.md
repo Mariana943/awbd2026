@@ -305,5 +305,7 @@ Modelul de date conține 8 entități interconectate. Relațiile importante sunt
 ## Studenta 
 
 -Sbârnea (Mihai) Mariana
+
 -IFR-Grupa2
+
 -Master AWBD 2026
