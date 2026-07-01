@@ -1,11 +1,13 @@
+#Configurarea bazei de date pentru testare
 spring:
   datasource:
-    url: jdbc:h2:mem:hospital_test
-    driver-class-name: org.h2.Driver
-    username: sa
-    password:
 
-  jpa:
+    url: jdbc:h2:mem:hospital_test #Baza de date H2 utilizat în timpul testelor
+    driver-class-name: org.h2.Driver # Driverul utilizat pentru conectarea la H2
+    username: sa  #Utilizatorul bazei de date
+    password: #Parola bazei de date
+
+  jpa: #Configurari JPA și Hibernate pentru teste
     hibernate:
-      ddl-auto: create-drop
-    show-sql: false
+      ddl-auto: create-drop # Creează baza de date la pornire și o sterge la oprire
+    show-sql: false #Nu afișează interogrările SQL în consolă

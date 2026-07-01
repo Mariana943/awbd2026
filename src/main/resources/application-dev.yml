@@ -1,18 +1,23 @@
+#Configurează portul pe care rulează aplicația
 server:
   port: 8080
 
+#Configurează conexiunii la baza de date H2
 spring:
   datasource:
-    url: jdbc:h2:mem:spitaldb
-    driver-class-name: org.h2.Driver
-    username: sa
-    password:
+    url: jdbc:h2:mem:spitaldb #Adresa bazei de date H2 în memorie
+    driver-class-name: org.h2.Driver #Driverul utilizat pentru baza de date H2
+    username: sa #Numele utilizatorului pentru conectare
+    password: #Parola utilizatorului(goala in acest caz)
 
+#Activează consola web H2
   h2:
     console:
       enabled: true
 
-  jpa:
+
+  jpa: #Configurari Hibernatte și JPA
+    #Actualizează automat structura tabelelor la pornirea aplicatiei
     hibernate:
       ddl-auto: update
-    show-sql: true
+    show-sql: true #Afișează în consolă integrogările SQL executate

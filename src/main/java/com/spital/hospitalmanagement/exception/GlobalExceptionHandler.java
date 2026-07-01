@@ -5,9 +5,13 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
+/**
+ * Clasă pentru gestionarea centralizată a excepțiilor
+ */
 @RestControllerAdvice
 public class GlobalExceptionHandler {
 
+    //Tratează excepțiile generale ale aplicației
     @ExceptionHandler(Exception.class)
     public ResponseEntity<String> handleException(Exception ex) {
         return new ResponseEntity<>(

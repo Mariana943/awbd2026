@@ -1,3 +1,4 @@
+#Activează profilul de dezvoltare al aplicației
 spring:
   profiles:
     active: dev

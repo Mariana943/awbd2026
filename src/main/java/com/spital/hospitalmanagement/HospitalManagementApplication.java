@@ -9,7 +9,10 @@ import com.spital.hospitalmanagement.model.*;
 import com.spital.hospitalmanagement.repository.*;
 import com.spital.hospitalmanagement.repository.TratamentRepository;
 
-
+/**
+ * Clasa principală a apliacției Hospital Management
+ * Această clasă pornește aplicația Spring Boot și inițiază toate componentele necesare
+ */
 @SpringBootApplication
 public class HospitalManagementApplication {
 
